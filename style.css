@@ -737,6 +737,9 @@ h1, h2, h3, h4 { font-family: var(--font-title); line-height: 1.18; }
   padding: 22px 0; text-align: center;
   color: var(--gray); font-size: .82rem;
 }
+.footer-dev { margin-top: 6px; }
+.footer-dev a { color: var(--blue-soft); font-weight: 600; transition: var(--transition); }
+.footer-dev a:hover { color: var(--white); }
 
 /* ===== WhatsApp flutuante ===== */
 .wa-float { position: fixed; bottom: 26px; right: 26px; z-index: 990; }
