@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NetMania Tecnologia e Serviços — Internet Fibra Óptica em Nova Matrona, Salinas/MG</title>
+<meta name="description" content="NetMania — Internet fibra óptica de alta velocidade e TV por streaming em Nova Matrona, Salinas/MG. Planos de 200MB, 400MB e 700MB. Assista à Copa do Mundo com a gente!">
+<link rel="icon" type="image/png" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div class="preloader" id="preloader">
+  <img src="Logo Netmania Tecnologia e Serviços.png" alt="NetMania" class="preloader-logo">
+  <div class="preloader-bar"><span></span></div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container nav-container">
+    <a href="#inicio" class="logo">
+      <img src="Logo Netmania Tecnologia e Serviços.png" alt="NetMania Tecnologia e Serviços">
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#inicio" class="nav-link active">Início</a>
+      <a href="#copa" class="nav-link">Copa 2026</a>
+      <a href="#planos" class="nav-link">Planos</a>
+      <a href="#streaming" class="nav-link">TV Streaming</a>
+      <a href="#app" class="nav-link">App</a>
+      <a href="#depoimentos" class="nav-link">Depoimentos</a>
+      <a href="#contato" class="nav-link">Contato</a>
+      <a href="https://netmania.sgp.tsmx.com.br/central" target="_blank" rel="noopener" class="btn btn-outline btn-nav">
+        <i class="fa-solid fa-user-lock"></i> Central do Assinante
+      </a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio">
+  <div class="hero-bg">
+    <canvas id="particles"></canvas>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+  </div>
+  <div class="container hero-content">
+    <div class="hero-text" data-animate="fade-right">
+      <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Fibra óptica 100% até sua casa</span>
+      <h1>Internet <span class="grad-text">ultrarrápida</span> e TV por streaming para toda a família</h1>
+      <p>A NetMania leva fibra óptica de verdade e entretenimento completo até você, em Nova Matrona e região. Velocidade, estabilidade e atendimento de gente que conhece você pelo nome.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/553897281811?text=Ol%C3%A1!%20Quero%20assinar%20a%20internet%20da%20NetMania!" target="_blank" rel="noopener" class="btn btn-primary pulse">
+          <i class="fa-brands fa-whatsapp"></i> Assine Agora
+        </a>
+        <a href="#planos" class="btn btn-ghost">
+          Ver Planos <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <strong><span class="counter" data-target="700">0</span>MB</strong>
+          <span>de velocidade</span>
+        </div>
+        <div class="stat">
+          <strong><span class="counter" data-target="99">0</span>%</strong>
+          <span>de disponibilidade</span>
+        </div>
+        <div class="stat">
+          <strong><span class="counter" data-target="100">0</span>%</strong>
+          <span>fibra óptica</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual" data-animate="fade-left">
+      <div class="router-card floating">
+        <div class="router-screen">
+          <div class="speed-ring">
+            <svg viewBox="0 0 200 200">
+              <circle class="ring-bg" cx="100" cy="100" r="85"/>
+              <circle class="ring-fill" cx="100" cy="100" r="85"/>
+            </svg>
+            <div class="ring-label">
+              <span class="ring-value" id="ringValue">700</span>
+              <span class="ring-unit">MEGA</span>
+            </div>
+          </div>
+          <div class="signal-bars">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+        </div>
+        <div class="chip chip-1 floating-slow"><i class="fa-solid fa-wifi"></i> Wi-Fi potente</div>
+        <div class="chip chip-2 floating-slower"><i class="fa-solid fa-tv"></i> TV Streaming</div>
+        <div class="chip chip-3 floating"><i class="fa-solid fa-gauge-high"></i> Baixa latência</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,64 C360,120 720,0 1080,48 C1260,72 1380,80 1440,64 L1440,120 L0,120 Z" fill="#0a2540"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== COPA DO MUNDO 2026 ===== -->
+<section class="copa" id="copa">
+  <div class="copa-bg">
+    <div class="copa-lines"></div>
+    <div class="ball ball-1">⚽</div>
+    <div class="ball ball-2">⚽</div>
+    <div class="ball ball-3">🏆</div>
+  </div>
+  <div class="container">
+    <div class="copa-grid">
+      <div class="copa-text" data-animate="fade-right">
+        <span class="section-tag tag-gold"><i class="fa-solid fa-trophy"></i> Copa do Mundo 2026</span>
+        <h2>Assista à <span class="grad-gold">Copa do Mundo</span> sem travar, direto na sua TV!</h2>
+        <p>A NetMania também é <strong>TV por streaming</strong>! Torça pelo Brasil com imagem em alta definição, sem travamentos e sem perder nenhum lance. Internet fibra + TV streaming: a escalação perfeita para a sua casa.</p>
+        <ul class="copa-list">
+          <li><i class="fa-solid fa-circle-check"></i> Todos os jogos com estabilidade de fibra óptica</li>
+          <li><i class="fa-solid fa-circle-check"></i> TV por streaming inclusa nos planos</li>
+          <li><i class="fa-solid fa-circle-check"></i> Assista no celular, smart TV ou tablet</li>
+          <li><i class="fa-solid fa-circle-check"></i> Qualidade de imagem sem interrupções</li>
+        </ul>
+        <a href="https://wa.me/553897281811?text=Quero%20assistir%20%C3%A0%20Copa%20com%20a%20NetMania!%20Me%20conta%20mais%20sobre%20a%20TV%20por%20streaming." target="_blank" rel="noopener" class="btn btn-gold">
+          <i class="fa-brands fa-whatsapp"></i> Quero torcer sem travar!
+        </a>
+      </div>
+      <div class="copa-visual" data-animate="fade-left">
+        <div class="tv-mock floating-slow">
+          <div class="tv-frame">
+            <div class="tv-screen">
+              <div class="field">
+                <div class="field-line center-circle"></div>
+                <div class="field-line mid-line"></div>
+                <div class="player p1"></div>
+                <div class="player p2"></div>
+                <div class="player p3"></div>
+                <div class="ball-anim">⚽</div>
+              </div>
+              <div class="tv-overlay">
+                <span class="live-badge"><span class="live-dot"></span> AO VIVO</span>
+                <span class="score">BRA 3 × 0 ⚽</span>
+              </div>
+            </div>
+          </div>
+          <div class="tv-base"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PLANOS ===== -->
+<section class="plans section" id="planos">
+  <div class="container">
+    <div class="section-head" data-animate="fade-up">
+      <span class="section-tag"><i class="fa-solid fa-rocket"></i> Nossos Planos</span>
+      <h2>Escolha a velocidade <span class="grad-text">ideal para você</span></h2>
+      <p>Todos os planos com fibra óptica 100%, Wi-Fi de alta performance e suporte local rápido.</p>
+    </div>
+    <div class="plans-grid">
+      <div class="plan-card" data-animate="fade-up" data-delay="0">
+        <div class="plan-icon"><i class="fa-solid fa-house-signal"></i></div>
+        <h3>Essencial</h3>
+        <div class="plan-speed"><span class="counter" data-target="200">0</span><small>MB</small></div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Fibra óptica 100%</li>
+          <li><i class="fa-solid fa-check"></i> Wi-Fi incluso</li>
+          <li><i class="fa-solid fa-check"></i> Ideal para redes sociais e vídeos</li>
+          <li><i class="fa-solid fa-check"></i> Suporte local</li>
+        </ul>
+        <a href="https://wa.me/553897281811?text=Quero%20assinar%20o%20plano%20de%20200MB!" target="_blank" rel="noopener" class="btn btn-plan">
+          <i class="fa-brands fa-whatsapp"></i> Consultar valor
+        </a>
+      </div>
+      <div class="plan-card plan-featured" data-animate="fade-up" data-delay="150">
+        <span class="plan-flag"><i class="fa-solid fa-star"></i> Mais Popular</span>
+        <div class="plan-icon"><i class="fa-solid fa-bolt"></i></div>
+        <h3>Turbo</h3>
+        <div class="plan-speed"><span class="counter" data-target="400">0</span><small>MB</small></div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Fibra óptica 100%</li>
+          <li><i class="fa-solid fa-check"></i> Wi-Fi de alta performance</li>
+          <li><i class="fa-solid fa-check"></i> Streaming e games sem travar</li>
+          <li><i class="fa-solid fa-check"></i> Vários dispositivos ao mesmo tempo</li>
+        </ul>
+        <a href="https://wa.me/553897281811?text=Quero%20assinar%20o%20plano%20de%20400MB!" target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Consultar valor
+        </a>
+      </div>
+      <div class="plan-card" data-animate="fade-up" data-delay="300">
+        <div class="plan-icon"><i class="fa-solid fa-jet-fighter-up"></i></div>
+        <h3>Ultra</h3>
+        <div class="plan-speed"><span class="counter" data-target="700">0</span><small>MB</small></div>
+        <ul>
+          <li><i class="fa-solid fa-check"></i> Fibra óptica 100%</li>
+          <li><i class="fa-solid fa-check"></i> Máxima velocidade da região</li>
+          <li><i class="fa-solid fa-check"></i> 4K, games e home office</li>
+          <li><i class="fa-solid fa-check"></i> Toda a casa conectada</li>
+        </ul>
+        <a href="https://wa.me/553897281811?text=Quero%20assinar%20o%20plano%20de%20700MB!" target="_blank" rel="noopener" class="btn btn-plan">
+          <i class="fa-brands fa-whatsapp"></i> Consultar valor
+        </a>
+      </div>
+    </div>
+    <p class="plans-note" data-animate="fade-up"><i class="fa-solid fa-circle-info"></i> Consulte condições e disponibilidade para o seu endereço pelo WhatsApp.</p>
+  </div>
+</section>
+
+<!-- ===== TV STREAMING ===== -->
+<section class="streaming section" id="streaming">
+  <div class="container">
+    <div class="streaming-grid">
+      <div class="streaming-visual" data-animate="fade-right">
+        <div class="screens">
+          <div class="screen screen-tv floating-slow"><i class="fa-solid fa-tv"></i><span>Smart TV</span></div>
+          <div class="screen screen-phone floating"><i class="fa-solid fa-mobile-screen-button"></i><span>Celular</span></div>
+          <div class="screen screen-tablet floating-slower"><i class="fa-solid fa-tablet-screen-button"></i><span>Tablet</span></div>
+          <div class="stream-pulse"></div>
+        </div>
+      </div>
+      <div class="streaming-text" data-animate="fade-left">
+        <span class="section-tag"><i class="fa-solid fa-clapperboard"></i> TV por Streaming</span>
+        <h2>Filmes, séries, esportes e TV ao vivo <span class="grad-text">onde você estiver</span></h2>
+        <p>Com a TV por streaming da NetMania, você leva seus canais favoritos para qualquer tela da casa. Esportes ao vivo, jornalismo, filmes e desenhos para as crianças — tudo com a qualidade da nossa fibra.</p>
+        <div class="features-mini">
+          <div class="fm"><i class="fa-solid fa-futbol"></i> Esportes ao vivo</div>
+          <div class="fm"><i class="fa-solid fa-film"></i> Filmes e séries</div>
+          <div class="fm"><i class="fa-solid fa-children"></i> Conteúdo infantil</div>
+          <div class="fm"><i class="fa-solid fa-newspaper"></i> Jornalismo</div>
+        </div>
+        <a href="https://wa.me/553897281811?text=Quero%20saber%20mais%20sobre%20a%20TV%20por%20streaming%20da%20NetMania!" target="_blank" rel="noopener" class="btn btn-primary">
+          <i class="fa-brands fa-whatsapp"></i> Saiba mais
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FERRAMENTAS (CENTRAL + SPEEDTEST) ===== -->
+<section class="tools section">
+  <div class="container">
+    <div class="tools-grid">
+      <a href="https://netmania.sgp.tsmx.com.br/central" target="_blank" rel="noopener" class="tool-card" data-animate="fade-up" data-delay="0">
+        <div class="tool-icon"><i class="fa-solid fa-user-gear"></i></div>
+        <div>
+          <h3>Central do Assinante</h3>
+          <p>Segunda via de boleto, faturas e dados do seu plano em um só lugar.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square tool-arrow"></i>
+      </a>
+      <a href="https://www.speedtest.net/pt" target="_blank" rel="noopener" class="tool-card" data-animate="fade-up" data-delay="150">
+        <div class="tool-icon"><i class="fa-solid fa-gauge-high"></i></div>
+        <div>
+          <h3>Medidor de Velocidade</h3>
+          <p>Teste agora a velocidade da sua conexão com o Speedtest.</p>
+        </div>
+        <i class="fa-solid fa-arrow-up-right-from-square tool-arrow"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== APP EM BREVE ===== -->
+<section class="app section" id="app">
+  <div class="container">
+    <div class="app-card" data-animate="zoom-in">
+      <div class="app-text">
+        <span class="section-tag tag-light"><i class="fa-solid fa-mobile-screen"></i> Novidade chegando</span>
+        <h2>Em breve, a NetMania na <span class="grad-text">palma da sua mão</span></h2>
+        <p>Estamos preparando o aplicativo NetMania para você acompanhar sua conexão, acessar faturas e falar com o suporte direto do celular. Aguarde nas lojas:</p>
+        <div class="store-badges">
+          <div class="store-badge soon">
+            <i class="fa-brands fa-apple"></i>
+            <div><small>Em breve na</small><strong>App Store</strong></div>
+          </div>
+          <div class="store-badge soon">
+            <i class="fa-brands fa-google-play"></i>
+            <div><small>Em breve no</small><strong>Google Play</strong></div>
+          </div>
+        </div>
+      </div>
+      <div class="app-visual">
+        <div class="phone-mock floating">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <img src="logo.png" alt="App NetMania" class="phone-logo">
+            <div class="phone-line w80"></div>
+            <div class="phone-line w60"></div>
+            <div class="phone-btns">
+              <span class="phone-btn"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+              <span class="phone-btn"><i class="fa-solid fa-wifi"></i></span>
+              <span class="phone-btn"><i class="fa-solid fa-headset"></i></span>
+            </div>
+            <span class="soon-tag">EM BREVE</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== DEPOIMENTOS ===== -->
+<section class="testimonials section" id="depoimentos">
+  <div class="container">
+    <div class="section-head" data-animate="fade-up">
+      <span class="section-tag"><i class="fa-solid fa-heart"></i> Depoimentos</span>
+      <h2>Quem usa, <span class="grad-text">recomenda</span></h2>
+      <p>A opinião de quem já navega com a NetMania em Nova Matrona e região.</p>
+    </div>
+    <div class="testi-slider" id="testiSlider" data-animate="fade-up">
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Internet excelente! Assisto meus jogos pelo streaming sem travar nada. O atendimento é rápido e o pessoal resolve na hora."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">JS</div>
+            <div><strong>João Santos</strong><span>Nova Matrona</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Trabalho com home office e precisava de uma conexão estável. Desde que assinei a NetMania, nunca mais tive dor de cabeça com queda de internet."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MA</div>
+            <div><strong>Maria Aparecida</strong><span>Salinas/MG</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"As crianças assistem desenho, eu vejo minhas séries e meu marido joga online — tudo ao mesmo tempo e funciona perfeitamente!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">FC</div>
+            <div><strong>Fernanda Costa</strong><span>Nova Matrona</span></div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <p>"Melhor custo-benefício da região. Instalação rápida, equipe atenciosa e a velocidade entrega o que promete. Recomendo demais!"</p>
+          <div class="testi-author">
+            <div class="testi-avatar">PR</div>
+            <div><strong>Pedro Rodrigues</strong><span>Salinas/MG</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-nav">
+        <button class="testi-btn" id="testiPrev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="testi-dots" id="testiDots"></div>
+        <button class="testi-btn" id="testiNext" aria-label="Próximo"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTATO / MAPA ===== -->
+<section class="contact section" id="contato">
+  <div class="container">
+    <div class="section-head" data-animate="fade-up">
+      <span class="section-tag"><i class="fa-solid fa-location-dot"></i> Onde Estamos</span>
+      <h2>Venha nos fazer uma <span class="grad-text">visita</span></h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info" data-animate="fade-right">
+        <div class="info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Endereço</strong>
+            <p>Rua Tiradentes, nº 18 — Centro<br>Distrito de Nova Matrona<br>Salinas/MG</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div>
+            <strong>WhatsApp</strong>
+            <p><a href="https://wa.me/553897281811" target="_blank" rel="noopener">(38) 9728-1811</a></p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-user-lock"></i>
+          <div>
+            <strong>Central do Assinante</strong>
+            <p><a href="https://netmania.sgp.tsmx.com.br/central" target="_blank" rel="noopener">Acessar minha conta</a></p>
+          </div>
+        </div>
+        <a href="https://wa.me/553897281811?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20NetMania%20e%20quero%20mais%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener" class="btn btn-primary btn-block">
+          <i class="fa-brands fa-whatsapp"></i> Falar com a NetMania
+        </a>
+      </div>
+      <div class="contact-map" data-animate="fade-left">
+        <iframe
+          src="https://www.google.com/maps?q=Rua+Tiradentes,+18,+Centro,+Nova+Matrona,+Salinas,+MG,+Brasil&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          title="Mapa — NetMania, Rua Tiradentes 18, Nova Matrona, Salinas/MG">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="Logo Netmania Tecnologia e Serviços.png" alt="NetMania Tecnologia e Serviços">
+        <p>Internet fibra óptica e TV por streaming com a qualidade que Nova Matrona e Salinas merecem.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegação</h4>
+        <a href="#inicio">Início</a>
+        <a href="#planos">Planos</a>
+        <a href="#streaming">TV Streaming</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div class="footer-col">
+        <h4>Atalhos</h4>
+        <a href="https://netmania.sgp.tsmx.com.br/central" target="_blank" rel="noopener">Central do Assinante</a>
+        <a href="https://www.speedtest.net/pt" target="_blank" rel="noopener">Medidor de Velocidade</a>
+        <a href="https://wa.me/553897281811" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+      <div class="footer-col">
+        <h4>Endereço</h4>
+        <p>Rua Tiradentes, nº 18 — Centro<br>Distrito de Nova Matrona<br>Salinas/MG</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> NetMania Tecnologia e Serviços. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== WHATSAPP FLUTUANTE ===== -->
+<div class="wa-float" id="waFloat">
+  <div class="wa-balloon" id="waBalloon">
+    <button class="wa-balloon-close" id="waBalloonClose" aria-label="Fechar">×</button>
+    <strong>⚽ Fala, torcedor!</strong>
+    <p>Assine hoje e assista à Copa sem travar! 🚀</p>
+  </div>
+  <a href="https://wa.me/553897281811?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20NetMania%20e%20quero%20saber%20mais!" target="_blank" rel="noopener" class="wa-btn" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="wa-ring"></span>
+  </a>
+</div>
+
+<!-- ===== VOLTAR AO TOPO ===== -->
+<button class="back-top" id="backTop" aria-label="Voltar ao topo"><i class="fa-solid fa-chevron-up"></i></button>
+
+<script src="script.js"></script>
+</body>
+</html>
