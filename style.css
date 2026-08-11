@@ -308,14 +308,14 @@ h1, h2, h3, h4 { font-family: var(--font-title); line-height: 1.18; }
 }
 .tag-light { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.2); color: var(--white); }
 
-/* ===== Copa do Mundo ===== */
-.copa {
+/* ===== Esportes ao vivo ===== */
+.sports {
   position: relative; overflow: hidden;
   padding: 110px 0;
   background: linear-gradient(135deg, #0a2540 0%, #0d3553 50%, #123f63 100%);
 }
-.copa-bg { position: absolute; inset: 0; pointer-events: none; }
-.copa-lines {
+.sports-bg { position: absolute; inset: 0; pointer-events: none; }
+.sports-lines {
   position: absolute; inset: 0;
   background-image: repeating-linear-gradient(115deg, transparent 0 60px, rgba(255,255,255,.025) 60px 120px);
 }
@@ -325,19 +325,19 @@ h1, h2, h3, h4 { font-family: var(--font-title); line-height: 1.18; }
 .ball-3 { top: 18%; right: 18%; animation-delay: 4.5s; font-size: 2.8rem; }
 @keyframes ballFloat { 0%,100% { transform: translateY(0) rotate(0deg);} 50% { transform: translateY(-30px) rotate(180deg);} }
 
-.copa-grid {
+.sports-grid {
   display: grid; grid-template-columns: 1.05fr .95fr;
   gap: 60px; align-items: center;
   position: relative; z-index: 2;
 }
-.copa-text h2 { font-size: clamp(1.8rem, 3.6vw, 2.7rem); font-weight: 800; margin: 18px 0; }
-.copa-text > p { color: var(--gray); margin-bottom: 26px; font-size: 1.04rem; }
-.copa-list { margin-bottom: 34px; display: grid; gap: 12px; }
-.copa-list li { display: flex; align-items: center; gap: 12px; color: #d7e7f2; font-weight: 500; }
-.copa-list i { color: var(--gold); font-size: 1.1rem; }
+.sports-text h2 { font-size: clamp(1.8rem, 3.6vw, 2.7rem); font-weight: 800; margin: 18px 0; }
+.sports-text > p { color: var(--gray); margin-bottom: 26px; font-size: 1.04rem; }
+.sports-list { margin-bottom: 34px; display: grid; gap: 12px; }
+.sports-list li { display: flex; align-items: center; gap: 12px; color: #d7e7f2; font-weight: 500; }
+.sports-list i { color: var(--gold); font-size: 1.1rem; }
 
 /* TV mockup com campo animado */
-.copa-visual { display: flex; justify-content: center; }
+.sports-visual { display: flex; justify-content: center; }
 .tv-mock { width: min(440px, 100%); }
 .tv-frame {
   background: #061a2c;
@@ -815,10 +815,10 @@ h1, h2, h3, h4 { font-family: var(--font-title); line-height: 1.18; }
 
 /* ===== Responsivo ===== */
 @media (max-width: 1024px) {
-  .hero-content, .copa-grid, .streaming-grid { grid-template-columns: 1fr; }
+  .hero-content, .sports-grid, .streaming-grid { grid-template-columns: 1fr; }
   .hero-visual { margin-top: 30px; }
   .chip-1 { left: -10px; } .chip-2 { right: -10px; } .chip-3 { left: 0; }
-  .copa-visual { order: -1; }
+  .sports-visual { order: -1; }
   .app-card { grid-template-columns: 1fr; padding: 46px 36px; text-align: center; }
   .app-text p { margin-inline: auto; }
   .store-badges { justify-content: center; }
